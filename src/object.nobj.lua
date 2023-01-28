@@ -1,2 +1,2 @@
-object "icu" {
+object "foo" {
 }

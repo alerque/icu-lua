@@ -7,7 +7,7 @@ c_module "icu" {
   -- load ICU shared library.
   ffi_load "icui18n",
 
-  -- include "vtzone.h",
+  include "unicode/uversion.h",
 
   subfiles {
     "src/object.nobj.lua",
