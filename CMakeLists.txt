@@ -1,5 +1,5 @@
 #
-# Lua bindings for libicu
+# Lua bindings for icu
 #
 cmake_minimum_required(VERSION 3.0)
 
@@ -22,9 +22,9 @@ if(NOT ${LUA51_FOUND})
 endif()
 set(COMMON_LIBS "${COMMON_LIBS};${LUA_LIBRARIES}")
 
-## LibIcu
+## icu
 include(FindPkgConfig)
-pkg_search_module(ICU REQUIRED libicu)
+pkg_search_module(ICU REQUIRED icu-i18n)
 set(COMMON_CFLAGS "${COMMON_CFLAGS} ${ICU_CFLAGS}")
 set(COMMON_LDFLAGS "${COMMON_LDFLAGS} ${ICU_LDFLAGS}")
 set(COMMON_LIBS "${COMMON_LIBS};${ICU_LIBRARIES}")
