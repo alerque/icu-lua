@@ -14,7 +14,7 @@ description = {
    homepage = "https://github.com/alerque/icu-lua",
    issues_url = "https://github.com/alerque/icu-lua/issues",
    maintainer = "Caleb Maclennan <caleb@alerque.com>",
-   labels = { "i18n", "unicode" }
+   labels = { "i18n", "unicode", "icu" }
 }
 
 dependencies = {

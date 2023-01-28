@@ -1,10 +1,11 @@
-rockspec_format = "3.0"
+rockspec_format = "1.0"
 package = "icu"
-version = "dev-0"
+version = "0.0.0-0"
 
 source = {
    url = "git+https://github.com/alerque/icu-lua.git",
-   branch = "master"
+   dir = "icu-lua",
+   tag = "v0.0.0"
 }
 
 description = {
@@ -12,9 +13,6 @@ description = {
    detailed = [[Full access to ICU4C functions from Lua]],
    license = "MIT/ICU",
    homepage = "https://github.com/alerque/icu-lua",
-   issues_url = "https://github.com/alerque/icu-lua/issues",
-   maintainer = "Caleb Maclennan <caleb@alerque.com>",
-   labels = { "i18n", "unicode", "icu" }
 }
 
 dependencies = {
