@@ -1,16 +1,16 @@
 
-c_module "icu-i18n" {
+c_module "icu" {
 
--- enable FFI bindings support.
-luajit_ffi = true,
+  -- enable FFI bindings support.
+  luajit_ffi = true,
 
--- load ICU shared library.
-ffi_load"icu-i18n",
+  -- load ICU shared library.
+  ffi_load "icui18n",
 
-include "icu-i18n.h",
+  -- include "vtzone.h",
 
-subfiles {
-"src/object.nobj.lua",
-},
+  subfiles {
+    "src/object.nobj.lua",
+  },
 }
 
