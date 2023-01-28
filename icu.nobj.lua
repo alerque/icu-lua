@@ -1,4 +1,3 @@
-
 c_module "icu" {
 
   -- enable FFI bindings support.
@@ -7,10 +6,10 @@ c_module "icu" {
   -- load ICU shared library.
   ffi_load "icui18n",
 
-  include "unicode/uversion.h",
+  include "unicode/ustring.h",
 
   subfiles {
-    "src/object.nobj.lua",
+    "src/ustring.nobj.lua",
   },
 }
 
