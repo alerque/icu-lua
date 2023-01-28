@@ -21,8 +21,19 @@ dependencies = {
    "lua >= 5.1"
 }
 
+external_dependencies = {
+	ICU = {
+		header = "icu.h",
+		library = "icu",
+	}
+}
+
 build = {
    type = "builtin",
    modules = {
+		icu = {
+			sources = { "src/pre_generated-icu.nobj.c" },
+			libraries = { "icu" },
+		}
    }
 }
